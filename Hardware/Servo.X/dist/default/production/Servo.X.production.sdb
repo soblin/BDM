@@ -1,0 +1,427 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16LF1508 ]
+[d frameptr 6 ]
+"62 /opt/microchip/xc8/v1.44/sources/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 /opt/microchip/xc8/v1.44/sources/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"48 /home/mamoru/MPLABXProjects/Servo.X/main.c
+[v _main main `(v  1 e 1 0 ]
+"57 /home/mamoru/MPLABXProjects/Servo.X/mcc_generated_files/clc1.c
+[v _CLC1_Initialize CLC1_Initialize `(v  1 e 1 0 ]
+"57 /home/mamoru/MPLABXProjects/Servo.X/mcc_generated_files/clc2.c
+[v _CLC2_Initialize CLC2_Initialize `(v  1 e 1 0 ]
+"57 /home/mamoru/MPLABXProjects/Servo.X/mcc_generated_files/clc3.c
+[v _CLC3_Initialize CLC3_Initialize `(v  1 e 1 0 ]
+"57 /home/mamoru/MPLABXProjects/Servo.X/mcc_generated_files/clc4.c
+[v _CLC4_Initialize CLC4_Initialize `(v  1 e 1 0 ]
+"51 /home/mamoru/MPLABXProjects/Servo.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"69 /home/mamoru/MPLABXProjects/Servo.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"85
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"93
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"52 /home/mamoru/MPLABXProjects/Servo.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"57 /home/mamoru/MPLABXProjects/Servo.X/mcc_generated_files/pwm2.c
+[v _PWM2_Initialize PWM2_Initialize `(v  1 e 1 0 ]
+"71
+[v _PWM2_LoadDutyValue PWM2_LoadDutyValue `(v  1 e 1 0 ]
+"57 /home/mamoru/MPLABXProjects/Servo.X/mcc_generated_files/pwm4.c
+[v _PWM4_Initialize PWM4_Initialize `(v  1 e 1 0 ]
+"71
+[v _PWM4_LoadDutyValue PWM4_LoadDutyValue `(v  1 e 1 0 ]
+"63 /home/mamoru/MPLABXProjects/Servo.X/mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+"107
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+"124
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+"128
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+"61 /home/mamoru/MPLABXProjects/Servo.X/mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+[s S273 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"372 /opt/microchip/xc8/v1.44/include/pic16lf1508.h
+[s S282 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S287 . 1 `S273 1 . 1 0 `S282 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES287  1 e 1 @11 ]
+[s S623 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"491
+[u S629 . 1 `S623 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES629  1 e 1 @13 ]
+[s S596 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"533
+[u S605 . 1 `S596 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES605  1 e 1 @14 ]
+[s S432 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"595
+[u S441 . 1 `S432 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES441  1 e 1 @17 ]
+"719
+[v _TMR0 TMR0 `VEuc  1 e 1 @21 ]
+"928
+[v _TMR2 TMR2 `VEuc  1 e 1 @26 ]
+"948
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
+"968
+[v _T2CON T2CON `VEuc  1 e 1 @28 ]
+[s S454 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 T2OUTPS 1 0 :4:3 
+]
+"989
+[s S458 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+[u S466 . 1 `S454 1 . 1 0 `S458 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES466  1 e 1 @28 ]
+"1039
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1089
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1128
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+"1331
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @149 ]
+[s S515 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1354
+[s S522 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S529 . 1 `S515 1 . 1 0 `S522 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES529  1 e 1 @149 ]
+"1471
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1530
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1864
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"1909
+[v _LATB LATB `VEuc  1 e 1 @269 ]
+"1948
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+[s S575 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"1965
+[u S584 . 1 `S575 1 . 1 0 ]
+[v _LATCbits LATCbits `VES584  1 e 1 @270 ]
+"2294
+[v _BORCON BORCON `VEuc  1 e 1 @278 ]
+"2496
+[v _APFCON APFCON `VEuc  1 e 1 @285 ]
+"2535
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2582
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"2618
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"3110
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"3168
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+"4816
+[v _PWM2DCL PWM2DCL `VEuc  1 e 1 @1556 ]
+"4852
+[v _PWM2DCH PWM2DCH `VEuc  1 e 1 @1557 ]
+"4922
+[v _PWM2CON PWM2CON `VEuc  1 e 1 @1558 ]
+"5180
+[v _PWM4DCL PWM4DCL `VEuc  1 e 1 @1562 ]
+"5216
+[v _PWM4DCH PWM4DCH `VEuc  1 e 1 @1563 ]
+"5286
+[v _PWM4CON PWM4CON `VEuc  1 e 1 @1564 ]
+"5703
+[v _CLC1CON CLC1CON `VEuc  1 e 1 @3856 ]
+[s S89 . 1 `uc 1 LC1MODE0 1 0 :1:0 
+`uc 1 LC1MODE1 1 0 :1:1 
+`uc 1 LC1MODE2 1 0 :1:2 
+`uc 1 LC1INTN 1 0 :1:3 
+`uc 1 LC1INTP 1 0 :1:4 
+`uc 1 LC1OUT 1 0 :1:5 
+`uc 1 LC1OE 1 0 :1:6 
+`uc 1 LC1EN 1 0 :1:7 
+]
+"5733
+[s S98 . 1 `uc 1 LCMODE0 1 0 :1:0 
+`uc 1 LCMODE1 1 0 :1:1 
+`uc 1 LCMODE2 1 0 :1:2 
+`uc 1 LCINTN 1 0 :1:3 
+`uc 1 LCINTP 1 0 :1:4 
+`uc 1 LCOUT 1 0 :1:5 
+`uc 1 LCOE 1 0 :1:6 
+`uc 1 LCEN 1 0 :1:7 
+]
+[s S107 . 1 `uc 1 LC1MODE 1 0 :3:0 
+]
+[u S109 . 1 `S89 1 . 1 0 `S98 1 . 1 0 `S107 1 . 1 0 ]
+[v _CLC1CONbits CLC1CONbits `VES109  1 e 1 @3856 ]
+"5823
+[v _CLC1POL CLC1POL `VEuc  1 e 1 @3857 ]
+"5901
+[v _CLC1SEL0 CLC1SEL0 `VEuc  1 e 1 @3858 ]
+"6006
+[v _CLC1SEL1 CLC1SEL1 `VEuc  1 e 1 @3859 ]
+"6111
+[v _CLC1GLS0 CLC1GLS0 `VEuc  1 e 1 @3860 ]
+"6223
+[v _CLC1GLS1 CLC1GLS1 `VEuc  1 e 1 @3861 ]
+"6335
+[v _CLC1GLS2 CLC1GLS2 `VEuc  1 e 1 @3862 ]
+"6447
+[v _CLC1GLS3 CLC1GLS3 `VEuc  1 e 1 @3863 ]
+"6559
+[v _CLC2CON CLC2CON `VEuc  1 e 1 @3864 ]
+[s S215 . 1 `uc 1 LC2MODE0 1 0 :1:0 
+`uc 1 LC2MODE1 1 0 :1:1 
+`uc 1 LC2MODE2 1 0 :1:2 
+`uc 1 LC2INTN 1 0 :1:3 
+`uc 1 LC2INTP 1 0 :1:4 
+`uc 1 LC2OUT 1 0 :1:5 
+`uc 1 LC2OE 1 0 :1:6 
+`uc 1 LC2EN 1 0 :1:7 
+]
+"6589
+[s S233 . 1 `uc 1 LC2MODE 1 0 :3:0 
+]
+[u S235 . 1 `S215 1 . 1 0 `S98 1 . 1 0 `S233 1 . 1 0 ]
+[v _CLC2CONbits CLC2CONbits `VES235  1 e 1 @3864 ]
+"6679
+[v _CLC2POL CLC2POL `VEuc  1 e 1 @3865 ]
+"6757
+[v _CLC2SEL0 CLC2SEL0 `VEuc  1 e 1 @3866 ]
+"6862
+[v _CLC2SEL1 CLC2SEL1 `VEuc  1 e 1 @3867 ]
+"6967
+[v _CLC2GLS0 CLC2GLS0 `VEuc  1 e 1 @3868 ]
+"7079
+[v _CLC2GLS1 CLC2GLS1 `VEuc  1 e 1 @3869 ]
+"7191
+[v _CLC2GLS2 CLC2GLS2 `VEuc  1 e 1 @3870 ]
+"7303
+[v _CLC2GLS3 CLC2GLS3 `VEuc  1 e 1 @3871 ]
+"7415
+[v _CLC3CON CLC3CON `VEuc  1 e 1 @3872 ]
+[s S152 . 1 `uc 1 LC3MODE0 1 0 :1:0 
+`uc 1 LC3MODE1 1 0 :1:1 
+`uc 1 LC3MODE2 1 0 :1:2 
+`uc 1 LC3INTN 1 0 :1:3 
+`uc 1 LC3INTP 1 0 :1:4 
+`uc 1 LC3OUT 1 0 :1:5 
+`uc 1 LC3OE 1 0 :1:6 
+`uc 1 LC3EN 1 0 :1:7 
+]
+"7445
+[s S170 . 1 `uc 1 LC3MODE 1 0 :3:0 
+]
+[u S172 . 1 `S152 1 . 1 0 `S98 1 . 1 0 `S170 1 . 1 0 ]
+[v _CLC3CONbits CLC3CONbits `VES172  1 e 1 @3872 ]
+"7535
+[v _CLC3POL CLC3POL `VEuc  1 e 1 @3873 ]
+"7613
+[v _CLC3SEL0 CLC3SEL0 `VEuc  1 e 1 @3874 ]
+"7718
+[v _CLC3SEL1 CLC3SEL1 `VEuc  1 e 1 @3875 ]
+"7823
+[v _CLC3GLS0 CLC3GLS0 `VEuc  1 e 1 @3876 ]
+"7935
+[v _CLC3GLS1 CLC3GLS1 `VEuc  1 e 1 @3877 ]
+"8047
+[v _CLC3GLS2 CLC3GLS2 `VEuc  1 e 1 @3878 ]
+"8159
+[v _CLC3GLS3 CLC3GLS3 `VEuc  1 e 1 @3879 ]
+"8271
+[v _CLC4CON CLC4CON `VEuc  1 e 1 @3880 ]
+[s S349 . 1 `uc 1 LC4MODE0 1 0 :1:0 
+`uc 1 LC4MODE1 1 0 :1:1 
+`uc 1 LC4MODE2 1 0 :1:2 
+`uc 1 LC4INTN 1 0 :1:3 
+`uc 1 LC4INTP 1 0 :1:4 
+`uc 1 LC4OUT 1 0 :1:5 
+`uc 1 LC4OE 1 0 :1:6 
+`uc 1 LC4EN 1 0 :1:7 
+]
+"8301
+[s S367 . 1 `uc 1 LC4MODE 1 0 :3:0 
+]
+[u S369 . 1 `S349 1 . 1 0 `S98 1 . 1 0 `S367 1 . 1 0 ]
+[v _CLC4CONbits CLC4CONbits `VES369  1 e 1 @3880 ]
+"8391
+[v _CLC4POL CLC4POL `VEuc  1 e 1 @3881 ]
+"8469
+[v _CLC4SEL0 CLC4SEL0 `VEuc  1 e 1 @3882 ]
+"8574
+[v _CLC4SEL1 CLC4SEL1 `VEuc  1 e 1 @3883 ]
+"8679
+[v _CLC4GLS0 CLC4GLS0 `VEuc  1 e 1 @3884 ]
+"8791
+[v _CLC4GLS1 CLC4GLS1 `VEuc  1 e 1 @3885 ]
+"8903
+[v _CLC4GLS2 CLC4GLS2 `VEuc  1 e 1 @3886 ]
+"9015
+[v _CLC4GLS3 CLC4GLS3 `VEuc  1 e 1 @3887 ]
+"44 /home/mamoru/MPLABXProjects/Servo.X/main.c
+[v _DutyPan DutyPan `ui  1 e 2 0 ]
+[v _DutyTilt DutyTilt `ui  1 e 2 0 ]
+"57 /home/mamoru/MPLABXProjects/Servo.X/mcc_generated_files/tmr0.c
+[v _timer0ReloadVal timer0ReloadVal `VEuc  1 e 1 0 ]
+"58
+[v _TMR0_InterruptHandler TMR0_InterruptHandler `*.37(v  1 e 2 0 ]
+"48 /home/mamoru/MPLABXProjects/Servo.X/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"97
+} 0
+"69 /home/mamoru/MPLABXProjects/Servo.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"83
+} 0
+"93
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"97
+} 0
+"61 /home/mamoru/MPLABXProjects/Servo.X/mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"76
+} 0
+"63 /home/mamoru/MPLABXProjects/Servo.X/mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+{
+"84
+} 0
+"124
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 1 ]
+"126
+} 0
+"57 /home/mamoru/MPLABXProjects/Servo.X/mcc_generated_files/pwm4.c
+[v _PWM4_Initialize PWM4_Initialize `(v  1 e 1 0 ]
+{
+"69
+} 0
+"57 /home/mamoru/MPLABXProjects/Servo.X/mcc_generated_files/pwm2.c
+[v _PWM2_Initialize PWM2_Initialize `(v  1 e 1 0 ]
+{
+"69
+} 0
+"52 /home/mamoru/MPLABXProjects/Servo.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"91
+} 0
+"85 /home/mamoru/MPLABXProjects/Servo.X/mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"91
+} 0
+"57 /home/mamoru/MPLABXProjects/Servo.X/mcc_generated_files/clc4.c
+[v _CLC4_Initialize CLC4_Initialize `(v  1 e 1 0 ]
+{
+"85
+} 0
+"57 /home/mamoru/MPLABXProjects/Servo.X/mcc_generated_files/clc3.c
+[v _CLC3_Initialize CLC3_Initialize `(v  1 e 1 0 ]
+{
+"85
+} 0
+"57 /home/mamoru/MPLABXProjects/Servo.X/mcc_generated_files/clc2.c
+[v _CLC2_Initialize CLC2_Initialize `(v  1 e 1 0 ]
+{
+"85
+} 0
+"57 /home/mamoru/MPLABXProjects/Servo.X/mcc_generated_files/clc1.c
+[v _CLC1_Initialize CLC1_Initialize `(v  1 e 1 0 ]
+{
+"85
+} 0
+"71 /home/mamoru/MPLABXProjects/Servo.X/mcc_generated_files/pwm4.c
+[v _PWM4_LoadDutyValue PWM4_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM4_LoadDutyValue@dutyValue dutyValue `ui  1 p 2 1 ]
+"78
+} 0
+"71 /home/mamoru/MPLABXProjects/Servo.X/mcc_generated_files/pwm2.c
+[v _PWM2_LoadDutyValue PWM2_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM2_LoadDutyValue@dutyValue dutyValue `ui  1 p 2 1 ]
+"78
+} 0
+"51 /home/mamoru/MPLABXProjects/Servo.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"62
+} 0
+"107 /home/mamoru/MPLABXProjects/Servo.X/mcc_generated_files/tmr0.c
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+{
+"121
+} 0
+"128
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"131
+} 0
