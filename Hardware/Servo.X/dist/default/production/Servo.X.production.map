@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=/opt/microchip/xc8/v1.44/dat/en_msgs.txt -cs \
   -h+dist/default/production/Servo.X.production.sym \
   --cmf=dist/default/production/Servo.X.production.cmf -z -Q16LF1508 \
-  -o/tmp/xcXvsb7ZO -Mdist/default/production/Servo.X.production.map -E1 \
+  -o/tmp/xcX3BYrv6 -Mdist/default/production/Servo.X.production.map -E1 \
   -ver=XC8 -ASTACK=02002h-020efh -pstack=STACK -ACODE=00h-07FFhx2 \
   -ASTRCODE=00h-0FFFh -ASTRING=00h-0FFhx16 -ACONST=00h-0FFhx16 \
   -AENTRY=00h-0FFhx16 -ACOMMON=070h-07Fh -ABANK0=020h-06Fh \
@@ -25,7 +25,7 @@ Linker command line:
   -preset_vec=00h,intentry=04h,init,end_init -ppowerup=CODE -pcinit=CODE \
   -pfunctab=ENTRY -ACONFIG=08007h-08008h -pconfig=CONFIG -DCONFIG=2 \
   -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 -DCODE=2 -DSTRCODE=2 \
-  -DSTRING=2 -DCONST=2 -DENTRY=2 -k /tmp/xcXVBBXXn.obj \
+  -DSTRING=2 -DCONST=2 -DENTRY=2 -k /tmp/xcXuYrQ7V.obj \
   dist/default/production/Servo.X.production.obj 
 
 Object code version is 3.11
@@ -35,7 +35,7 @@ Machine type is 16LF1508
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-/tmp/xcXVBBXXn.obj
+/tmp/xcXuYrQ7V.obj
                 end_init                             13       13        2        8       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        2    1000E       0
